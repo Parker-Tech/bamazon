@@ -9,3 +9,6 @@ CREATE TABLE IF NOT EXISTS products(
     price INT,
     stock_quantity INT
 );
+
+INSERT INTO products(product_name, department_name, price, stock_quantity)
+VALUES ("Water Bottle", "Liquids", 40, 100);
