@@ -37,6 +37,25 @@ function showProducts() {
       );
       console.log(table.toString());
     }
-    connection.end();
+    productSelect();
   });
+};
+
+function listTable() {
+  //make this function list the table incase i need to call it more than once(line 23)
+};
+
+function productSelect() {
+  inquirer.prompt([
+    {
+      type: "input",
+      message: "What is the ID of the item you would like to buy?",
+      name: "itemName"      
+    },
+    {
+      type: "input",
+      message: "How many would you like to buy?",
+      name: "itemAmount"
+    }
+  ])
 };
